@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<img class="logo" src="./images/logo.png" />
+
+				<div class="search-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+						<path d="M11.906 10.528a6.353 6.353 0 0 0 1.313-3.913C13.219 2.98 10.313 0 6.656 0 3 0 0 2.981 0 6.615c0 3.633 3 6.615 6.656 6.615 1.5 0 2.907-.466 3.938-1.305l2.812 2.795c.188.187.469.28.656.28.188 0 .47-.093.657-.28a.897.897 0 0 0 0-1.304l-2.813-2.888zm-5.25.745c-2.625 0-4.781-2.05-4.781-4.658 0-2.609 2.156-4.752 4.781-4.752 2.625 0 4.782 2.143 4.782 4.752s-2.157 4.658-4.782 4.658z"/>
+					</svg>
+
+					<input type="text" class="search-input" placeholder="Search">
+				</div>
+
+				<div class="navigation">
+					<a href="#" class="nav-link">Home</a>
+					<a href="#" class="nav-link">My Network</a>
+					<a href="#" class="nav-link">Listings</a>
+				</div>
+
+				<div class="actions">
+					<button class="action">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+							<path fill-rule="nonzero" d="M1.5 0C.674 0 0 .674 0 1.5v9.75L2.25 9h7.5c.826 0 1.5-.674 1.5-1.5v-6c0-.826-.674-1.5-1.5-1.5H1.5zM12 3.75V7.5c0 1.274-.976 2.25-2.25 2.25h-6v1.5c0 .826.674 1.5 1.5 1.5h7.5L15 15V5.25c0-.826-.674-1.5-1.5-1.5H12z"/>
+						</svg>
+					</button>
+
+					<button class="action">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 16">
+							<path fill-rule="nonzero" d="M6.5 0c-.578 0-1.083.56-1.083 1.2v.55c-2.28.547-3.973 2.747-3.973 5.45v3.6L0 12.65v.95h13v-.95l-1.444-1.85V7.2c0-2.703-1.693-4.903-3.973-5.45V1.2C7.583.56 7.078 0 6.5 0zM5.056 14.4c0 .881.648 1.6 1.444 1.6.796 0 1.444-.719 1.444-1.6H5.056z"/>
+						</svg>
+					</button>
+
+					<button class="action">
+						<div class="avatar"></div>
+					</button>
+
+					<button class="action">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+							<path fill-rule="nonzero" d="M0 1.01C0 .451.443 0 1.01 0h1.98C3.549 0 4 .443 4 1.01v1.98C4 3.549 3.557 4 2.99 4H1.01C.451 4 0 3.557 0 2.99V1.01zm6 0C6 .451 6.443 0 7.01 0h1.98C9.549 0 10 .443 10 1.01v1.98C10 3.549 9.557 4 8.99 4H7.01C6.451 4 6 3.557 6 2.99V1.01zm6 0C12 .451 12.443 0 13.01 0h1.98C15.549 0 16 .443 16 1.01v1.98C16 3.549 15.557 4 14.99 4h-1.98C12.451 4 12 3.557 12 2.99V1.01zm-12 6C0 6.451.443 6 1.01 6h1.98C3.549 6 4 6.443 4 7.01v1.98C4 9.549 3.557 10 2.99 10H1.01C.451 10 0 9.557 0 8.99V7.01zm6 0C6 6.451 6.443 6 7.01 6h1.98C9.549 6 10 6.443 10 7.01v1.98C10 9.549 9.557 10 8.99 10H7.01C6.451 10 6 9.557 6 8.99V7.01zm6 0c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98C12.451 10 12 9.557 12 8.99V7.01zm-12 6C0 12.451.443 12 1.01 12h1.98c.558 0 1.01.443 1.01 1.01v1.98C4 15.549 3.557 16 2.99 16H1.01C.451 16 0 15.557 0 14.99v-1.98zm6 0c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01H7.01C6.451 16 6 15.557 6 14.99v-1.98zm6 0c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98c-.558 0-1.01-.443-1.01-1.01v-1.98z"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="content">
+			<div class="container">
+				<div class="profile">
+					<div class="avatar"></div>
+					<p class="name">Danny Schneider</p>
+					<p class="address">Laval, Montreal</p>
+					<p class="work-position">Agent at  Remax</p>
+					<a href="#" class="profile-link">View Profile</a>
+				</div>
+
+				<div class="dashboard">
+					<div class="input-container">
+						<input class="post-input" type="text" placeholder="Share an update @mention someone or upload a file">
+
+						<div class="actions">
+							<button class="write-article">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+									<path fill-rule="nonzero" d="M2.475 0c-.823 0-1.5.677-1.5 1.5v9c0 .823.677 1.5 1.5 1.5H5v-1H2.475a.493.493 0 0 1-.5-.5v-9c0-.281.218-.5.5-.5h4.5v3h3v1h1V3.293L7.682 0H2.475zm5.5 1.707L9.268 3H7.975V1.707zm4.207 4.297a1.27 1.27 0 0 0-.903.38l-4.623 4.704-.705 2.963 2.961-.705.1-.098 4.605-4.523a1.283 1.283 0 0 0 .01-1.815l-.535-.535c-.25-.25-.58-.373-.91-.371zm.005.994c.07 0 .141.027.198.084l.535.535a.27.27 0 0 1-.002.393v.002l-4.506 4.424-1.111.265.263-1.11 4.428-4.505.002-.002a.27.27 0 0 1 .194-.086z"/>
+								</svg>
+
+
+								<span class="button-text">Write an article</span>
+							</button>
+
+							<button class="file">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+									<path fill-rule="nonzero" d="M4.25 17A4.255 4.255 0 0 1 0 12.75V3.187A3.19 3.19 0 0 1 3.188 0a3.19 3.19 0 0 1 3.187 3.188v9.562a2.127 2.127 0 0 1-2.125 2.125 2.127 2.127 0 0 1-2.125-2.125V4.781a.531.531 0 0 1 1.063 0v7.969a1.063 1.063 0 0 0 2.124 0V3.187a2.127 2.127 0 0 0-2.125-2.124 2.127 2.127 0 0 0-2.124 2.125v9.562a3.19 3.19 0 0 0 3.187 3.188 3.19 3.19 0 0 0 3.188-3.188V4.781a.531.531 0 0 1 1.062 0v7.969A4.255 4.255 0 0 1 4.25 17z"/>
+								</svg>
+							</button>
+
+							<button class="submit">Post</button>
+						</div>
+					</div>
+
+					<article class="article">
+						<div class="author">
+							<div class="avatar"></div>
+
+							<div class="author-info">
+								<p class="name">Myrtle Hogan</p>
+								<p class="work-position">Sales Manager</p>
+								<p class="time">2m ago</p>
+							</div>
+						</div>
+
+						<div class="article-content">
+							<p class="paragraph">Great way to start 2018 by judging once again at John Molson MBA International Case Competition. World class competition in which students teams from across the world attend and compete with each other. Working along seasoned judges from Montreal</p>
+						</div>
+
+						<div class="actions">
+							<button class="action-button">Like</button>
+							<button class="action-button">Comment</button>
+							<button class="action-button">Share</button>
+						</div>
+					</article>
+
+					<article class="article">
+						<div class="author">
+							<div class="avatar"></div>
+
+							<div class="author-info">
+								<p class="name">Aiden Park</p>
+								<p class="work-position">Sales Manager</p>
+								<p class="time">1hr ago</p>
+							</div>
+						</div>
+
+						<div class="article-content">
+							<p class="paragraph">Created a new listing 89011 Klington Ave</p>
+							<p class="paragraph">Absolutely gorgeous home in Miraloma Park neighborhood. Completely updated - move right in! Flooded with light & designed for entertaining - windows on all 4 rooms</p>
+						</div>
+
+						<div class="actions">
+							<button class="action-button">Like</button>
+							<button class="action-button">Comment</button>
+							<button class="action-button">Share</button>
+						</div>
+					</article>
+
+					<article class="article">
+						<div class="author">
+							<div class="avatar"></div>
+
+							<div class="author-info">
+								<p class="name">Myrtle Hogan</p>
+								<p class="work-position">Sales Manager</p>
+								<p class="time">3m ago</p>
+							</div>
+						</div>
+
+						<div class="article-content">
+							<p class="paragraph">Great way to start 2018 by judging once again at John Molson MBA International Case Competition. World class competition in which students teams from across the world attend and compete with each other. Working along seasoned judges from Montreal</p>
+						</div>
+
+						<div class="actions">
+							<button class="action-button">Like</button>
+							<button class="action-button">Comment</button>
+							<button class="action-button">Share</button>
+						</div>
+					</article>
+
+					<article class="article">
+						<div class="author">
+							<div class="avatar"></div>
+
+							<div class="author-info">
+								<p class="name">Myrtle Hogan</p>
+								<p class="work-position">Sales Manager</p>
+								<p class="time">4m ago</p>
+							</div>
+						</div>
+
+						<div class="article-content">
+							<p class="paragraph">Great way to start 2018 by judging once again at John Molson MBA International Case Competition. World class competition in which students teams from across the world attend and compete with each other. Working along seasoned judges from Montreal</p>
+						</div>
+
+						<div class="actions">
+							<button class="action-button">Like</button>
+							<button class="action-button">Comment</button>
+							<button class="action-button">Share</button>
+						</div>
+					</article>
+				</div>
+
+				<div class="sidebar">
+					<div class="actions">Actions</div>
+
+					<div class="recent">
+						<p class="title">Recent Listings</p>
+
+						<div class="listing">
+							<div class="house-img"></div>
+
+							<div class="house-details">
+								<p class="address">593 Brendan Field</p>
+								<p class="price">$1,212,000</p>
+							</div>
+						</div>
+
+						<div class="listing">
+							<div class="house-img"></div>
+
+							<div class="house-details">
+								<p class="address">593 Brendan Field</p>
+								<p class="price">$1,212,000</p>
+							</div>
+						</div>
+
+						<div class="listing">
+							<div class="house-img"></div>
+
+							<div class="house-details">
+								<p class="address">593 Brendan Field</p>
+								<p class="price">$1,212,000</p>
+							</div>
+						</div>
+
+						<a href="#" class="view-all">View all listings</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
