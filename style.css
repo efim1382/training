@@ -28,6 +28,7 @@ input:focus {
   outline: none;
 }
 
+
 html,
 body {
   height: 100%;
@@ -218,6 +219,10 @@ body {
   font-weight: 500;
 }
 
+.content .container .profile .profile-link:hover {
+  color: #266eae;
+}
+
 .content .container .dashboard {
   flex-grow: 1;
   margin-left: 20px;
@@ -258,18 +263,33 @@ body {
   border: 1px solid #bfbfbf;
   border-radius: 14px;
   background-color: transparent;
+  transition: 0.3s;
 }
 
 .content .container .dashboard .input-container .actions .write-article svg {
   width: 14px;
   height: 14px;
   fill: #797979;
+  transition: 0.3s;
 }
 
 .content .container .dashboard .input-container .actions .write-article .button-text {
   margin-left: 10px;
   font-size: 13px;
   color: #797979;
+  transition: 0.3s;
+}
+
+.content .container .dashboard .input-container .actions .write-article:hover {
+  border-color: #4a90e2;
+}
+
+.content .container .dashboard .input-container .actions .write-article:hover .button-text {
+  color: #4a90e2;
+}
+
+.content .container .dashboard .input-container .actions .write-article:hover .svg {
+  fill: #4a90e2;
 }
 
 .content .container .dashboard .input-container .actions .file {
@@ -355,6 +375,53 @@ body {
 .content .container .dashboard .article .article-content .paragraph {
   font-size: 13px;
   line-height: 18px;
+}
+
+.article .article-content .advertising {
+
+}
+
+.article .article-content .advertising + .paragraph, 
+.article .article-content .paragraph + .advertising {
+  margin-top: 12px;
+} 
+
+.article .article-content .advertising .sale-image {
+  width: 100%;
+}
+
+.article .article-content .advertising .sale-department {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.article .article-content .advertising .sale-department .sale-infirmation .sale-name {
+  font-size: 15px;
+}
+
+.article .article-content .advertising .sale-department .sale-infirmation .sale-adress {
+  margin-top: 2px;
+  color: #797979;
+  font-size: 13px;
+}
+
+.article .article-content .advertising .sale-department .sale-infirmation .sale-cost {
+  margin-top: 2px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.article .article-content .advertising .sale-department .appeal {
+  margin-left: auto;
+  height: 32px;
+  border: 1px solid #2184dc;
+  color: #2184dc;
+  font-size: 12px;
+  line-height: 8px;
+  border-radius: 2px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 .content .container .dashboard .article .article-content .paragraph + .paragraph {
@@ -454,3 +521,4 @@ body {
   color: #2184dc;
   text-decoration: none;
 }
+  
