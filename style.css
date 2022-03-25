@@ -312,7 +312,7 @@ body {
   width: 16px;
   height: 16px;
   fill: #939393;
-}
+} 
 
 .content .container .dashboard .input-container .actions .submit {
   height: 28px;
@@ -324,7 +324,19 @@ body {
   border-radius: 2px;
   color: #fff;
   font-size: 13px;
+  transition: 0.35s;
 }
+
+.content .container .dashboard .input-container .actions .submit:hover {
+  background-color: #25639a;
+}
+
+
+
+
+
+
+
 
 .content .container .dashboard .article {
   margin-top: 12px;
@@ -429,6 +441,12 @@ body {
   border-radius: 2px;
   padding-right: 12px;
   padding-left: 12px;
+  transition: 0.3s;
+}
+
+.article .article-content .advertising .sale-department .appeal:hover {
+  background-color: #2184dc;
+  color: white;
 }
 
 .content .container .dashboard .article .article-content .paragraph + .paragraph {
@@ -447,6 +465,11 @@ body {
   padding-right: 12px;
   font-size: 13px;
   color: #797979;
+  transition: 0.3s;
+}
+
+.content .container .dashboard .article .actions .action-button:hover {
+  color: #2184dc;
 }
 
 .content .container .dashboard .article .actions .action-button:first-child {
@@ -527,5 +550,9 @@ body {
   font-size: 13px;
   color: #2184dc;
   text-decoration: none;
+  transition: 0.2s;
 }
-  
+
+.content .container .sidebar .recent .view-all:hover {
+  color: #22598a;
+  }
