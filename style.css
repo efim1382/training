@@ -324,7 +324,7 @@ body {
   border-radius: 2px;
   color: #fff;
   font-size: 13px;
-  transition: 0.35s;
+  transition: 0.3s;
 }
 
 .content .container .dashboard .input-container .actions .submit:hover {
@@ -439,7 +439,7 @@ body {
 
 .content .container .dashboard .article .article-content .advertising .sale-department .appeal:hover {
   background-color: #2184dc;
-  color: white;
+  color: #fff;
 }
 
 .content .container .dashboard .article .article-content .paragraph + .paragraph {
@@ -543,9 +543,9 @@ body {
   font-size: 13px;
   color: #2184dc;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .content .container .sidebar .recent .view-all:hover {
   color: #22598a;
-  }
+}
