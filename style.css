@@ -312,7 +312,7 @@ body {
   width: 16px;
   height: 16px;
   fill: #939393;
-} 
+}
 
 .content .container .dashboard .input-container .actions .submit {
   height: 28px;
@@ -330,13 +330,6 @@ body {
 .content .container .dashboard .input-container .actions .submit:hover {
   background-color: #25639a;
 }
-
-
-
-
-
-
-
 
 .content .container .dashboard .article {
   margin-top: 12px;
@@ -396,42 +389,42 @@ body {
   line-height: 18px;
 }
 
-.article .article-content .advertising {
+.content .container .dashboard .article .article-content .advertising {
 
 }
 
-.article .article-content .advertising + .paragraph, 
-.article .article-content .paragraph + .advertising {
+.content .container .dashboard .article .article-content .advertising + .paragraph, 
+.content .container .dashboard .article .article-content .paragraph + .advertising {
   margin-top: 12px;
 } 
 
-.article .article-content .advertising .sale-image {
+.content .container .dashboard .article .article-content .advertising .sale-image {
   width: 100%;
 }
 
-.article .article-content .advertising .sale-department {
+.content .container .dashboard .article .article-content .advertising .sale-department {
   display: flex;
   padding-top: 24px;
   padding-bottom: 12px;
 }
 
-.article .article-content .advertising .sale-department .sale-infirmation .sale-name {
+.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-name {
   font-size: 15px;
 }
 
-.article .article-content .advertising .sale-department .sale-infirmation .sale-adress {
+.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-adress {
   margin-top: 2px;
   color: #797979;
   font-size: 13px;
 }
 
-.article .article-content .advertising .sale-department .sale-infirmation .sale-cost {
+.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-cost {
   margin-top: 2px;
   font-size: 15px;
   font-weight: 500;
 }
 
-.article .article-content .advertising .sale-department .appeal {
+.content .container .dashboard .article .article-content .advertising .sale-department .appeal {
   margin-left: auto;
   height: 32px;
   border: 1px solid #2184dc;
@@ -444,7 +437,7 @@ body {
   transition: 0.3s;
 }
 
-.article .article-content .advertising .sale-department .appeal:hover {
+.content .container .dashboard .article .article-content .advertising .sale-department .appeal:hover {
   background-color: #2184dc;
   color: white;
 }
