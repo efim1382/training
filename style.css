@@ -475,8 +475,14 @@ body {
   margin-left: 30px;
 }
 
-.content .container .sidebar .actions {
-  height: 42px;
+.content .container .sidebar .dropdown {
+  position: relative;
+}
+
+.content .container .sidebar .dropdown .dropdown-action {
+  display: flex;
+  align-items: center;
+  width: 100%;
   line-height: 42px;
   padding-left: 20px;
   padding-right: 20px;
@@ -484,6 +490,65 @@ body {
   border-radius: 2px;
   font-size: 15px;
   color: #fff;
+}
+
+.content .container .sidebar .dropdown .dropdown-action .svg-closed {
+  height: 8px;
+  margin-left: auto;  
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.content .container .sidebar .dropdown .dropdown-action:hover .svg-closed {
+  transform: rotate(-180deg);
+}
+
+.content .container .sidebar .dropdown .dropdown-content {
+  position: absolute;
+  top: 42px;
+  padding-top: 8px;
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.content .container .sidebar .dropdown .dropdown-content:hover + .dropdown-action svg {
+  transform: rotate(-180deg);
+}
+
+.content .container .sidebar .dropdown:hover .dropdown-content {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 274px;
+  height: 42px;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 12px;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item svg {
+  height: 16px;
+  width: 16px;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item .item-text {
+  margin-left: 12px;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item:hover {
+  color: #2184dc;
 }
 
 .content .container .sidebar .recent {
@@ -523,7 +588,7 @@ body {
   margin-left: 16px;
 }
 
-.content .container .sidebar .recent .listing .house-details .address {
+.content .container .sidebar .recent .listing .house-details .address { 
   height: 22px;
   line-height: 22px;
   font-size: 15px;
