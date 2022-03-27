@@ -77,31 +77,98 @@ body {
 }
 
 .header .container .search-container {
-  display: flex;
-  align-items: center;
   width: 310px;
   height: 40px;
   margin-left: 20px;
-  padding-left: 12px;
-  padding-right: 12px;
   border-radius: 4px;
   background-color: #6ba4e6;
+  display: flex;
+  position: relative;
 }
 
-.header .container .search-container svg {
-  flex-shrink: 0;
+
+
+.header .container .search-container .search-dropdown .dropdown-title {
+  margin-left: 20px;
+}
+
+.header .container .search-container .search-dropdown {
+  background-color: #fff;
+  width: 490px;
+  position: absolute;
+  top: 42px;
+  border-radius: 2px;
+  border: 1px solid #dedede;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  opacity: 1;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 0;
+}
+
+.header .container .search-container:focus-within .search-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.3s;
+}
+
+.header .container .search-container .search-dropdown .search-dropdown-item .svg-dropdown {
+  width: 16px;
+  height: 16px;
+}
+
+.header .container .search-container .search-dropdown .search-dropdown-item .search-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  text-decoration: none;
+  color: #1b1d1f;
+  font-weight: 300;
+  padding-left: 20px;
+  transition: 0.3s;
+}
+
+.header .container .search-container .search-dropdown .search-dropdown-item:first-of-type {
+  margin-top: 16px;
+}
+
+.header .container .search-container .search-dropdown .search-dropdown-item .search-link .link-name {
+  margin-left: 16px;
+}
+
+.header .container .search-container .search-dropdown .search-dropdown-item .search-link:hover {
+  background-color: #dedede;
+ border-left: 0;
+ border-right: 0;
+}
+
+
+
+
+
+
+.header .container .search-container .svg-input {
   width: 16px;
   height: 16px;
   fill: #fff;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .header .container .search-container .search-input {
-  flex-grow: 1;
-  margin-left: 12px;
   font-size: 15px;
   color: #fff;
   background-color: transparent;
-  border: 0
+  border: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 12px;
 }
 
 .header .container .search-container .search-input::placeholder {
