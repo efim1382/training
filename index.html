@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Home</title>
 		<link rel="stylesheet" href="./style.css">
+		<link rel="icon" href="images/logo.png">
 	</head>
 
 	<body>
@@ -12,11 +13,49 @@
 				<img class="logo" src="./images/logo.png" />
 
 				<div class="search-container">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+					<svg class="svg-input" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 						<path d="M11.906 10.528a6.353 6.353 0 0 0 1.313-3.913C13.219 2.98 10.313 0 6.656 0 3 0 0 2.981 0 6.615c0 3.633 3 6.615 6.656 6.615 1.5 0 2.907-.466 3.938-1.305l2.812 2.795c.188.187.469.28.656.28.188 0 .47-.093.657-.28a.897.897 0 0 0 0-1.304l-2.813-2.888zm-5.25.745c-2.625 0-4.781-2.05-4.781-4.658 0-2.609 2.156-4.752 4.781-4.752 2.625 0 4.782 2.143 4.782 4.752s-2.157 4.658-4.782 4.658z"/>
 					</svg>
 
 					<input type="text" class="search-input" placeholder="Search">
+					
+					<div class="search-dropdown">
+						<span class="dropdown-title">Search for</span>
+						
+						<a href="#" class="search-link">
+							<svg class="svg-dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+    							<g fill="none" fill-rule="evenodd">
+        							<path fill="#797979" fill-rule="nonzero" d="M8 .029L0 4.636l.615 1.066V16h14.77V5.702L16 4.636 8 .029zm0 1.42l6.154 3.544v9.776H1.846V4.993L8 1.448z"/>
+        							<path fill="#FFF" d="M7.385 8h8v8h-8z"/>
+        							<path fill="#2184DC" d="M11.692 9.846v2.462H9.231v1.23h2.461V16h1.231v-2.462h2.462v-1.23h-2.462V9.846z"/>
+    							</g>
+							</svg>
+
+							<span class="link-name">Brokes</span>
+						</a>
+
+						<a href="#" class="search-link">
+							<svg class="svg-dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16">
+    							<g fill="none" fill-rule="evenodd">
+        							<path fill="#797979" fill-rule="nonzero" d="M5.91 0a3.552 3.552 0 0 0-3.546 3.545 3.552 3.552 0 0 0 3.545 3.546 3.552 3.552 0 0 0 3.546-3.546A3.552 3.552 0 0 0 5.909 0zm0 7.09C2.65 7.09 0 9.74 0 13h1.182a4.73 4.73 0 0 1 4.727-4.727c1.09 0 2.078.383 2.876 1.002.19-.351.411-.68.688-.956-.993-.757-2.22-1.228-3.564-1.228zm0-5.908a2.356 2.356 0 0 1 2.363 2.363A2.356 2.356 0 0 1 5.909 5.91a2.356 2.356 0 0 1-2.364-2.364A2.356 2.356 0 0 1 5.91 1.182z"/>
+        							<path fill="#2184DC" d="M12.462 9v2.462H10v1.23h2.462v2.462h1.23v-2.462h2.462v-1.23h-2.462V9z"/>
+    							</g>
+							</svg>
+
+							<span class="link-name">Agent</span>
+						</a>
+
+						<a href="#" class="search-link">
+							<svg class="svg-dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+    							<g fill="none" fill-rule="evenodd">
+        							<path fill="#797979" fill-rule="nonzero" d="M0 0v16h6.77v-1.23H1.23V1.23h6.155v3.693h3.692v3.692h1.23V4.053L8.256 0H0zm8.615 2.101l1.592 1.591H8.615V2.101zM6.154 6.769v2.462h2.461a2.452 2.452 0 0 1-2.461 2.461 2.452 2.452 0 0 1-2.462-2.461 2.452 2.452 0 0 1 2.462-2.462z"/>
+        							<path fill="#2184DC" d="M11.462 10v2.462H9v1.23h2.462v2.462h1.23v-2.462h2.462v-1.23h-2.462V10z"/>
+    							</g>
+							</svg>
+
+							<span class="link-name">Listings</span>
+						</a>
+					</div>
 				</div>
 
 				<div class="navigation">
