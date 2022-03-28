@@ -96,6 +96,8 @@ body {
 	padding-top: 14px;
 	pointer-events: none;
 	opacity: 0;
+	transition: 0.3s;
+	
 }
 
 .header .container .search-container .search-dropdown .dropdown-title {
@@ -107,7 +109,6 @@ body {
 .header .container .search-container:focus-within .search-dropdown {
 	opacity: 1;
 	pointer-events: auto;
-	transition: 0.3s;
 }
 
 .header .container .search-container .search-dropdown .search-link .svg-dropdown {
