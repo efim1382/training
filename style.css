@@ -97,7 +97,7 @@ body {
 	pointer-events: none;
 	opacity: 0;
 	transition: 0.3s;
-	
+
 }
 
 .header .container .search-container .search-dropdown .dropdown-title {
@@ -125,7 +125,7 @@ body {
 	padding-left: 20px;
 	transition: 0.3s;
 	color: #000;
-	font-size: 15;
+	font-size: 15px;
 	font-weight: 500;
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .header .container .search-container .search-dropdown .search-link:hover {
-	background-color: #dedede;
+	background-color: #f2f2f2;
 }
 
 .header .container .search-container .svg-input {
