@@ -1,0 +1,460 @@
+.content {
+	flex-grow: 1;
+	padding-top: 20px;
+}
+
+.content .container {
+	display: flex;
+	align-items: flex-start;
+}
+
+.content .container .profile {
+	flex-shrink: 0;
+	width: 254px;
+	padding-top: 20px;
+	background-color: #fff;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid var(--border-color);
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.content .container .profile .avatar {
+	width: 74px;
+	height: 74px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 37px;
+}
+
+.content .container .profile .name {
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.content .container .profile .address {
+	font-size: 15px;
+	color: var(--caption-color);
+}
+
+.content .container .profile .work-position {
+	margin-top: 12px;
+	font-size: 13px;
+}
+
+.content .container .profile .profile-link {
+	display: block;
+	height: 44px;
+	line-height: 44px;
+	margin-top: 30px;
+	border-top: 1px solid #eee;
+	color: var(--accent-color);
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.content .container .profile .profile-link:hover {
+	color: #266eae;
+}
+
+.content .container .dashboard {
+	flex-grow: 1;
+	margin-left: 20px;
+}
+
+.content .container .dashboard .input-container {
+	padding-left: 16px;
+	padding-right: 16px;
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	background-color: #fff;
+}
+
+.content .container .dashboard .input-container .post-input {
+	width: 100%;
+	height: 70px;
+	font-size: 15px;
+}
+
+.content .container .dashboard .input-container .post-input::placeholder {
+	color: var(--caption-color);
+	font-weight: 300;
+}
+
+.content .container .dashboard .input-container .actions {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	border-top: 1px solid var(--border-color);
+}
+
+.content .container .dashboard .input-container .actions .write-article {
+	display: flex;
+	align-items: center;
+	height: 28px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border: 1px solid #bfbfbf;
+	border-radius: 14px;
+	background-color: transparent;
+	transition: 0.3s;
+}
+
+.content .container .dashboard .input-container .actions .write-article svg {
+	width: 14px;
+	height: 14px;
+	fill: var(--caption-color);
+	transition: 0.3s;
+}
+
+.content .container .dashboard .input-container .actions .write-article .button-text {
+	margin-left: 10px;
+	font-size: 13px;
+	color: var(--caption-color);
+	transition: 0.3s;
+}
+
+.content .container .dashboard .input-container .actions .write-article:hover {
+	border-color: var(--accent-hover-color);
+}
+
+.content .container .dashboard .input-container .actions .write-article:hover .button-text {
+	color: var(--accent-hover-color);
+}
+
+.content .container .dashboard .input-container .actions .write-article:hover .svg {
+	fill: var(--accent-hover-color);
+}
+
+.content .container .dashboard .input-container .actions .file {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 28px;
+	height: 28px;
+	margin-left: auto;
+	border: 1px solid transparent;
+	transition: 0.3s;
+	border-radius: 2px;
+}
+
+.content .container .dashboard .input-container .actions .file:hover {
+	border-color: var(--border-color);
+}
+
+.content .container .dashboard .input-container .actions .file svg {
+	width: 16px;
+	height: 16px;
+	fill: #939393;
+}
+
+.content .container .dashboard .input-container .actions .submit {
+	height: 28px;
+	line-height: 28px;
+	margin-left: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: var(--accent-color);
+	border-radius: 2px;
+	color: #fff;
+	font-size: 13px;
+	transition: 0.3s;
+}
+
+.content .container .dashboard .input-container .actions .submit:hover {
+	background-color: #25639a;
+}
+
+.content .container .dashboard .article {
+	margin-top: 12px;
+	padding-left: 16px;
+	padding-top: 16px;
+	padding-right: 16px;
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px solid var(--border-color);
+}
+
+.content .container .dashboard .article .author {
+	display: flex;
+	align-items: center;
+}
+
+.content .container .dashboard .article .author .avatar {
+	flex-shrink: 0;
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+}
+
+.content .container .dashboard .article .author .author-info {
+	flex-grow: 1;
+	margin-left: 10px;
+}
+
+.content .container .dashboard .article .author .author-info .name {
+	height: 16px;
+	line-height: 16px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.content .container .dashboard .article .author .author-info .work-position {
+	height: 14px;
+	line-height: 14px;
+	font-size: 13px;
+	color: var(--caption-color);
+}
+
+.content .container .dashboard .article .author .author-info .time {
+	height: 14px;
+	line-height: 14px;
+	font-size: 13px;
+	color: var(--caption-color);
+}
+
+.content .container .dashboard .article .article-content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.content .container .dashboard .article .article-content .paragraph {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.content .container .dashboard .article .article-content .advertising {
+
+}
+
+.content .container .dashboard .article .article-content .advertising + .paragraph, 
+.content .container .dashboard .article .article-content .paragraph + .advertising {
+	margin-top: 12px;
+} 
+
+.content .container .dashboard .article .article-content .advertising .sale-image {
+	width: 100%;
+}
+
+.content .container .dashboard .article .article-content .advertising .sale-department {
+	display: flex;
+	padding-top: 24px;
+	padding-bottom: 12px;
+}
+
+.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-name {
+	font-size: 15px;
+}
+
+.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-adress {
+	margin-top: 2px;
+	color: var(--caption-color);
+	font-size: 13px;
+}
+
+.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-cost {
+	margin-top: 2px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.content .container .dashboard .article .article-content .advertising .sale-department .appeal {
+	margin-left: auto;
+	height: 32px;
+	border: 1px solid var(--accent-color);
+	color: var(--accent-color);
+	font-size: 12px;
+	line-height: 8px;
+	border-radius: 2px;
+	padding-right: 12px;
+	padding-left: 12px;
+	transition: 0.3s;
+}
+
+.content .container .dashboard .article .article-content .advertising .sale-department .appeal:hover {
+	background-color: var(--accent-color);
+	color: #fff;
+}
+
+.content .container .dashboard .article .article-content .paragraph + .paragraph {
+	margin-top: 8px;
+}
+
+.content .container .dashboard .article .actions {
+	display: flex;
+	border-top: 1px solid var(--border-color);
+}
+
+.content .container .dashboard .article .actions .action-button {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-size: 13px;
+	color: var(--caption-color);
+	transition: 0.3s;
+}
+
+.content .container .dashboard .article .actions .action-button:hover {
+	color: var(--accent-color);
+}
+
+.content .container .dashboard .article .actions .action-button:first-child {
+	margin-left: -12px;
+}
+
+.content .container .sidebar {
+	flex-shrink: 0;
+	width: 274px;
+	margin-left: 30px;
+}
+
+.content .container .sidebar .dropdown {
+	position: relative;
+}
+
+.content .container .sidebar .dropdown .dropdown-action {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	line-height: 42px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: var(--accent-color);
+	border-radius: 2px;
+	font-size: 15px;
+	color: #fff;
+}
+
+.content .container .sidebar .dropdown .dropdown-action svg {
+	margin-left: auto;  
+	width: 12px;
+	height: 12px;
+	fill: #fff;
+	transition: 0.3s;
+}
+
+.content .container .sidebar .dropdown .dropdown-action:hover svg {
+	transform: rotate(-180deg);
+}
+
+.content .container .sidebar .dropdown .dropdown-content {
+	right: 0;
+	left: 0;
+	position: absolute;
+	top: 42px;
+	padding-top: 8px;
+	transition: 0.3s;
+	opacity: 0;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+.content .container .sidebar .dropdown .dropdown-content:hover + .dropdown-action svg {
+	transform: rotate(-180deg);
+}
+
+.content .container .sidebar .dropdown:hover .dropdown-content {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	height: 42px;
+	border: 1px solid #cfcfcf;
+	border-radius: 2px;
+	transition: 0.3s;
+	font-size: 13px;
+	font-weight: 500;
+	padding-left: 12px;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item svg {
+	height: 16px;
+	width: 16px;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item .item-text {
+	margin-left: 12px;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item:last-child {
+	border-top: none;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item:first-child {
+	border-bottom: none;
+}
+
+.content .container .sidebar .dropdown .dropdown-content .dropdown-item:hover {
+	color: var(--accent-color);
+}
+
+.content .container .sidebar .recent {
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	background-color: #fff;
+}
+
+.content .container .sidebar .recent .title {
+	font-size: 15px;
+}
+
+.content .container .sidebar .recent .listing {
+	display: flex;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.content .container .sidebar .recent .listing:first-of-type {
+	margin-top: 10px;
+}
+
+.content .container .sidebar .recent .listing .house-img {
+	flex-shrink: 0;
+	width: 54px;
+	height: 44px;
+	background-image: url("./images/house.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.content .container .sidebar .recent .listing .house-details {
+	flex-grow: 1;
+	margin-left: 16px;
+}
+
+.content .container .sidebar .recent .listing .house-details .address { 
+	height: 22px;
+	line-height: 22px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.content .container .sidebar .recent .listing .house-details .price {
+	height: 22px;
+	line-height: 22px;
+	font-size: 13px;
+	color: var(--caption-color);
+}
+
+.content .container .sidebar .recent .view-all {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 13px;
+	color: var(--accent-color);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.content .container .sidebar .recent .view-all:hover {
+	color: #22598a;
+}

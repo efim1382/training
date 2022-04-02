@@ -1,0 +1,439 @@
+.content {
+	padding-top: 20px;
+	flex-grow: 1;
+}
+
+.content .container {
+	display: flex;
+	margin-bottom: 60px;
+}
+
+.content .container .section {
+	flex-grow: 1;
+}
+
+.content .container .section .profile-information {
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+	border: 1px solid #dedede;
+	border-radius: 2px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+.content .container .section .profile-information:before {
+	content: "";
+	height: 140px;
+	background-color: #f8f8f8;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.content .container .section .profile-information .avatar {
+	width: 130px;
+	height: 130px;
+	border-radius: 130px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 76px;
+	z-index: 1;
+	position: relative;
+}
+
+.content .container .section .profile-information .description .name-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 24px;
+}
+
+.content .container .section .profile-information .description .name-block .edit {
+	width: 16px;
+	height: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content .container .section .profile-information .description .name-block .svg-name {
+	width: 12px;
+	height: 12px;
+}
+
+.svg-mail {
+	height: 16px;
+	width: 16px;
+}
+
+.content .container .section .profile-information .description .name {
+	font-size: 18px;
+	font-weight: 500;
+	padding-right: 10px;
+}
+
+.content .container .section .profile-information .description .country {
+	font-size: 15px;
+	color: #797979;
+}
+
+.content .container .section .profile-information .description .position {
+	margin-top: 18px;
+	font-size: 13px;
+}
+
+
+
+.content .container .section .profile-information .mail-all {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 52px;
+	border-top: 1px solid var(--border-color);
+	margin-top: 28px;
+}
+
+.content .container .profile-information .mail {
+	font-size: 13px;
+	color: #797979;
+	padding-left: 10px;
+}
+
+.content .container .section .team {
+	background-color: #fff;
+	margin-top: 30px;
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	padding: 24px 20px;
+}
+
+.content .container .section .team .team-title {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.content .container .section .team .command {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 28px;
+}
+
+.content .container .section .team .command .staff {
+	width: 176px;
+	height: 200px;
+	border: 1px solid var(--border-color);
+	padding: 15px 15px;
+}
+
+.content .container .section .team .command .staff .avatar {
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+}
+
+.content .container .section .team .command .staff .information {
+	margin-top: 16px;
+}
+
+.content .container .section .team .command .staff .information .employee-name {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.content .container .section .team .command .staff .information .position {
+	color: var(--caption-color);
+	font-size: 13px;
+	margin-top: 4px;
+}
+
+.content .container .section .team .command .staff .information .license {
+	color: var(--text-color);
+	font-size: 13px;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+.content .container .section .team .command .staff .information .license .number {
+	color: var(--caption-color);
+	font-size: 13px;
+}
+
+
+.content .container .section .team .team-members {
+	text-decoration: none;
+	color: var(--accent-color);
+	font-size: 13px;
+	font-weight: 500;
+	display: inline-block;
+	margin-top: 30px;
+	transition: 0.3s;
+}
+
+.content .container .section .team .team-members:hover {
+	color: #346896;
+}
+
+.content .container .section .catalog {
+	background-color: var(--section-background-color);
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	margin-top: 16px;
+	padding: 24px 24px;
+}
+
+.content .container .section .catalog .title-listings {
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 24px;
+}
+
+.content .container .section .catalog .house {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+.content .container .section .catalog .house .house-sale {
+	width: 176px;
+	background-color: var(--section-background-color);
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	text-decoration: none;
+	margin-bottom: 30px;
+}
+
+.content .container .section .catalog .house .house-sale .type-image {
+	background-image: url("./images/display.jpeg");
+	height: 100px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.content .container .section .catalog .house .house-sale .details {
+	padding: 8px 16px;
+}
+
+.content .container .section .catalog .house .house-sale .house-name {
+	font-size: 15px;
+	font-weight: 500;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: var(--text-color);
+}
+
+.content .container .section .catalog .house .house-sale .place {
+	color: var(--caption-color);
+	font-size: 13px;
+	margin-top: 2px;
+}
+
+.content .container .section .catalog .house .house-sale .accent {
+	background-color: #459a0a;
+	color: var(--section-background-color);
+	font-size: 11px;
+	border-radius: 2px;
+	margin-top: 12px;
+	padding: 4px 8px;
+	display: inline-block;
+}
+
+.content .container .section .catalog .house .house-sale .accent-red {
+	background-color: #e4031e;
+	margin-top: 12px;
+	padding: 4px 8px;
+	max-width: 50px;
+	color: var(--section-background-color);
+	font-size: 11px;
+	border-radius: 2px;
+	display: inline-block;
+}
+
+.content .container .section .catalog .house .link-all-listings {
+	text-decoration: none;
+	color: var(--accent-color);
+	font-size: 13px;
+	font-weight: 500;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+.content .container .section .catalog .house .link-all-listings:hover {
+	color: #346896;
+}
+
+.content .container .section .showing {
+	background-color: var(--section-background-color);
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	margin-top: 12px;
+	flex-grow: 1;
+	padding: 24px 24px;
+}
+
+.content .container .section .showing .title-showing {
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 24px;
+}
+
+.content .container .section .showing .showing-list {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+.content .container .section .showing .showing-list .house-sale {
+	width: 176px;
+	background-color: var(--section-background-color);
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	text-decoration: none;
+	margin-right: 28px;
+	padding-bottom: 26px;
+}
+
+.content .container .section .showing .showing-list .house-sale:first-child {
+	margin-left: 0;
+}
+
+.content .container .section .showing .showing-list .house-sale .type-image {
+	background-image: url("./images/display.jpeg");
+	height: 100px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-left: 8px;
+	padding-top: 8px;
+}
+
+.content .container .section .showing .showing-list .house-sale .type-image .showing-time {
+	width: 140px;
+	height: 20px;
+	background-color: rgba(69, 154, 10, 0.7);
+	border-radius: 2px;
+	font-size: 11px;
+	color: var(--section-background-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content .container .section .showing .showing-list .house-sale .details {
+	padding: 8px 16px;
+}
+
+.content .container .section .showing .showing-list .house-sale .house-name {
+	font-size: 15px;
+	font-weight: 500;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: var(--text-color);
+}
+
+.content .container .section .showing .showing-list .house-sale .place {
+	color: var(--caption-color);
+	font-size: 13px;
+	margin-top: 2px;
+}
+
+.content .container .section .showing .showing-list .house-sale .accent {
+	width: 66px;
+	background-color: #459a0a;
+	color: var(--section-background-color);
+	font-size: 11px;
+	border-radius: 2px;
+	margin-top: 12px;
+	padding: 4px 8px;
+}
+
+.content .container .sidebar {
+	margin-left: 30px;
+}
+
+.content .container .information .sidebar {
+	margin-left: 30px;
+}
+
+.content .container .sidebar .information .label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 76px;
+	background-color: #fff;
+	width: 276px;
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+}
+
+.content .container .sidebar .information .label .label-name {
+	font-size: 28px;
+	font-weight: 500;
+	color: #2184dc;
+}
+
+.content .container .information .adress {
+	margin-top: 16px;
+}
+
+.content .container .information .adress .name-company {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.content .container .information .adress .post-company {
+	font-size: 13px;
+	color: var(--caption-color);
+	margin-top: 4px;
+}
+
+.content .container .information .adress .adress-company {
+	color: var(--caption-color);
+	font-size: 13px;
+	margin-top: 4px;
+}
+
+.content .container .information .adress .site {
+	text-decoration: none;
+	color: var(--accent-color);
+	font-size: 13px;
+}
+
+.content .container .information .information-lane {
+	height: 1px;
+	background-color: #e5e5e5;
+	margin-top: 36px;
+}
+
+.content .container .information .contact .contact-title {
+	color: #939393;
+	font-weight: 500;
+}
+
+.content .container .information .contact {
+	font-size: 13px;
+	margin-top: 24px;
+}
+
+.content .container .information .contact .post-container {
+	display: flex;
+	align-items: center;
+	margin-top: 12px;
+}
+
+.content .container .information .contact .post-container .contact-post {
+	margin-left: 10px;
+}
+
+.content .container .information .contact .post-container .svg-contact {
+	height: 16px;
+	width: 16px;
+}
