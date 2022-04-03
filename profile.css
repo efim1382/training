@@ -1,11 +1,11 @@
 .content {
 	padding-top: 20px;
 	flex-grow: 1;
+	padding-bottom: 60px;
 }
 
 .content .container {
 	display: flex;
-	margin-bottom: 60px;
 }
 
 .content .container .section {
@@ -13,10 +13,10 @@
 }
 
 .content .container .section .profile-information {
-	background-color: #fff;
+	background-color: var(--section-background-color);
 	text-align: center;
 	position: relative;
-	border: 1px solid #dedede;
+	border: 1px solid var(--border-color);
 	border-radius: 2px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -34,7 +34,7 @@
 .content .container .section .profile-information .avatar {
 	width: 130px;
 	height: 130px;
-	border-radius: 130px;
+	border-radius: 65px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 76px;
@@ -52,7 +52,7 @@
 
 .content .container .section .profile-information .description .name-block .name {
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 	padding-right: 10px;
 }
 
@@ -72,7 +72,7 @@
 
 .content .container .section .profile-information .description .country {
 	font-size: 15px;
-	color: #797979;
+	color: var(--caption-color);
 }
 
 .content .container .section .profile-information .description .position {
@@ -96,21 +96,21 @@
 
 .content .container .profile-information .mail-all .mail {
 	font-size: 13px;
-	color: #797979;
+	color: var(--caption-color);
 	padding-left: 10px;
 }
 
 .content .container .section .team {
-	background-color: #fff;
+	background-color: var(--section-background-color);
 	margin-top: 30px;
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
-	padding: 24px 20px;
+	padding: 24px;
 }
 
 .content .container .section .team .team-title {
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 }
 
 .content .container .section .team .command {
@@ -123,7 +123,7 @@
 	width: 176px;
 	height: 200px;
 	border: 1px solid var(--border-color);
-	padding: 15px 15px;
+	padding: 15px;
 }
 
 .content .container .section .team .command .staff .avatar {
@@ -139,7 +139,7 @@
 
 .content .container .section .team .command .staff .information .employee-name {
 	font-size: 15px;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 }
 
 .content .container .section .team .command .staff .information .position {
@@ -149,9 +149,8 @@
 }
 
 .content .container .section .team .command .staff .information .license {
-	color: var(--text-color);
 	font-size: 13px;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 	margin-top: 10px;
 }
 
@@ -164,7 +163,7 @@
 	text-decoration: none;
 	color: var(--accent-color);
 	font-size: 13px;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 	display: inline-block;
 	margin-top: 30px;
 	transition: 0.3s;
@@ -179,13 +178,12 @@
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
 	margin-top: 16px;
-	padding: 24px 24px;
+	padding: 24px;
 }
 
 .content .container .section .catalog .title-listings {
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 	font-size: 18px;
-	margin-bottom: 24px;
 }
 
 .content .container .section .catalog .house {
@@ -200,13 +198,12 @@
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
 	text-decoration: none;
-	margin-bottom: 30px;
+	margin-top: 28px;
 }
 
 .content .container .section .catalog .house .house-sale .type-image {
 	background-image: url("./images/display.jpeg");
 	height: 100px;
-	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -218,7 +215,7 @@
 
 .content .container .section .catalog .house .house-sale .house-name {
 	font-size: 15px;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -256,9 +253,10 @@
 	text-decoration: none;
 	color: var(--accent-color);
 	font-size: 13px;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 	display: inline-block;
 	transition: 0.3s;
+	margin-top: 28px;
 }
 
 .content .container .section .catalog .house .link-all-listings:hover {
@@ -269,20 +267,19 @@
 	background-color: var(--section-background-color);
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
-	margin-top: 12px;
-	padding: 24px 24px;
+	margin-top: 16px;
+	padding: 24px;
 }
 
 .content .container .section .showing .title-showing {
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 	font-size: 18px;
-	margin-bottom: 24px;
 }
 
 .content .container .section .showing .showing-list {
 	display: flex;
-	justify-content: flex-start;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .content .container .section .showing .showing-list .house-sale {
@@ -291,8 +288,8 @@
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
 	text-decoration: none;
-	margin-right: 28px;
 	padding-bottom: 26px;
+	margin-top: 30px;
 }
 
 .content .container .section .showing .showing-list .house-sale:first-child {
@@ -302,7 +299,6 @@
 .content .container .section .showing .showing-list .house-sale .type-image {
 	background-image: url("./images/display.jpeg");
 	height: 100px;
-	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -311,15 +307,13 @@
 }
 
 .content .container .section .showing .showing-list .house-sale .type-image .showing-time {
-	width: 140px;
-	height: 20px;
+	display: inline-block;
 	background-color: rgba(69, 154, 10, 0.7);
 	border-radius: 2px;
 	font-size: 11px;
 	color: var(--section-background-color);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 3px 4px;
+	text-transform: uppercase;
 }
 
 .content .container .section .showing .showing-list .house-sale .details {
@@ -328,7 +322,7 @@
 
 .content .container .section .showing .showing-list .house-sale .house-name {
 	font-size: 15px;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -353,79 +347,82 @@
 
 .content .container .sidebar {
 	margin-left: 30px;
+	flex-shrink: 0;
+	width: 276px;
+
 }
 
-.content .container .sidebar .information .label {
+.content .container .sidebar .label-name {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 76px;
-	background-color: #fff;
-	width: 276px;
+	background-color: var(--section-background-color);
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
 }
 
-.content .container .sidebar .information .label .label-name {
+.content .container .sidebar .label-name {
 	font-size: 28px;
-	font-weight: 500;
-	color: #2184dc;
+	font-weight: var(--font-weight-seme-bold);
+	color: var(--accent-color);
 }
 
-.content .container .information .adress {
+.content .container .sidebar .adress {
 	margin-top: 16px;
+	flex-wrap: wrap;
 }
 
-.content .container .information .adress .name-company {
+.content .container .sidebar .adress .name-company {
 	font-size: 15px;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
 }
 
-.content .container .information .adress .post-company {
+.content .container .sidebar .adress .post-company {
 	font-size: 13px;
 	color: var(--caption-color);
 	margin-top: 4px;
 }
 
-.content .container .information .adress .adress-company {
+.content .container .sidebar .adress .adress-company {
 	color: var(--caption-color);
 	font-size: 13px;
 	margin-top: 4px;
 }
 
-.content .container .information .adress .site {
+.content .container .sidebar .adress .site {
 	text-decoration: none;
 	color: var(--accent-color);
 	font-size: 13px;
 }
 
-.content .container .information .information-lane {
-	height: 1px;
-	background-color: #e5e5e5;
-	margin-top: 36px;
-}
-
-.content .container .information .contact {
+.content .container .contact {
 	font-size: 13px;
 	margin-top: 24px;
+	border-top: 1px solid var(--border-color);
 }
 
-.content .container .information .contact .contact-title {
+.content .container .sidebar .contact .contact-title {
 	color: #939393;
-	font-weight: 500;
+	font-weight: var(--font-weight-seme-bold);
+	margin-top: 24px;
+	text-transform: uppercase;
 }
 
-.content .container .information .contact .post-container {
+.content .container .sidebar .contact .post-container {
 	display: flex;
 	align-items: center;
 	margin-top: 12px;
 }
 
-.content .container .information .contact .post-container .svg-contact {
+.content .container .sidebar .contact .post-container .svg-contact {
 	height: 16px;
 	width: 16px;
+	min-height: 16px;
+	min-width: 16px;
 }
 
-.content .container .information .contact .post-container .contact-post {
+.content .container .sidebar .contact .post-container .contact-post {
 	margin-left: 10px;
+	word-break: break-all;
 }

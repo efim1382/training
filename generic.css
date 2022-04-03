@@ -34,8 +34,10 @@ html {
 	--accent-hover-color: #4a90e2;
 	--caption-color: #797979;
 	--border-color: #dedede;
-	--background-color: #f4f4f4;	
+	--background-color: #f4f4f4;
 	--section-background-color: #fff;
+	--font-weight-regular: 300;
+	--font-weight-seme-bold: 500;
 }
 
 
