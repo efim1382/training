@@ -43,16 +43,25 @@
 	position: relative;
 }
 
+.content .container .section .profile-information .description {
+	display: inline-block;
+	width: 350px;
+}
+
 .content .container .section .profile-information .description .name-block {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 24px;
+
 }
 
 .content .container .section .profile-information .description .name-block .name {
 	font-size: 18px;
 	font-weight: var(--font-weight-semibold);
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .content .container .section .profile-information .description .name-block .edit {
@@ -113,35 +122,40 @@
 	text-overflow: ellipsis;
 }
 
-.content .container .section .team .command {
+.content .container .section .team .team-list {
 	--gap: 20px;
 	--columns: 4;
 	gap: var(--gap);
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 28px;
+	margin-top: 24px;
 }
 
-.content .container .section .team .command .staff {
+.content .container .section .team .team-list .staff {
 	width: calc((100% - (var(--gap) * (var(--columns) - 1))) / 4);
 	border: 1px solid var(--border-color);
 	padding: 16px;
 	text-decoration: none;
+	transition: 0.3s;
 }
 
-.content .container .section .team .command .staff .avatar {
+.content .container .section .team .team-list .staff:hover {
+	background-color: var(--background-color-hover);
+}
+
+.content .container .section .team .team-list .staff .avatar {
 	--avatar-size: 60px;
 	width: var(--avatar-size);
 	height: var(--avatar-size);
 	border-radius: calc(var(--avatar-size) / 2);
 }
 
-.content .container .section .team .command .staff .information {
+.content .container .section .team .team-list .staff .information {
 	margin-top: 16px;
 	color: var(--text-color);
 }
 
-.content .container .section .team .command .staff .information .employee-name {
+.content .container .section .team .team-list .staff .information .employee-name {
 	font-size: var(--font-size);
 	font-weight: var(--font-weight-semibold);
 	text-overflow: ellipsis;
@@ -149,20 +163,20 @@
 	overflow: hidden;
 }
 
-.content .container .section .team .command .staff .information .position {
+.content .container .section .team .team-list .staff .information .position {
 	color: var(--caption-color);
 	font-size: 13px;
 	margin-top: 4px;
 }
 
-.content .container .section .team .command .staff .information .license {
+.content .container .section .team .team-list .staff .information .license {
 	font-size: 13px;
 	font-weight: var(--font-weight-semibold);
 	margin-top: 10px;
 	word-break: break-all;
 }
 
-.content .container .section .team .command .staff .information .license .number {
+.content .container .section .team .team-list .staff .information .license .number {
 	color: var(--caption-color);
 	font-size: 13px;
 	margin-left: 4px;
@@ -182,7 +196,7 @@
 	color: #0e48c7;
 }
 
-.content .container .section .catalog {
+.content .container .section .listings {
 	background-color: var(--section-background-color);
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
@@ -190,29 +204,34 @@
 	padding: 24px;
 }
 
-.content .container .section .catalog .title-listings {
+.content .container .section .listings .title-listings {
 	font-weight: var(--font-weight-semibold);
 	font-size: 18px;
 }
 
-.content .container .section .catalog .house {
+.content .container .section .listings .listings-list {
 	--gap: 20px;
 	--columns: 4;
 	gap: var(--gap);
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 24px;
 }
 
-.content .container .section .catalog .house .house-sale {
+.content .container .section .listings .listings-list .listing-item {
 	width: calc((100% - (var(--gap) * (var(--columns) - 1))) / var(--columns));
 	background-color: var(--section-background-color);
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
 	text-decoration: none;
-	margin-top: 28px;
+	transition: 0.3s;
 }
 
-.content .container .section .catalog .house .house-sale .type-image {
+.content .container .section .listings .listings-list .listing-item:hover {
+	background-color: var(--background-color-hover);
+}
+
+.content .container .section .listings .listings-list .listing-item .image {
 	background-image: url("./images/display.jpeg");
 	height: 100px;
 	background-repeat: no-repeat;
@@ -220,11 +239,11 @@
 	background-size: cover;
 }
 
-.content .container .section .catalog .house .house-sale .details {
+.content .container .section .listings .listings-list .listing-item .details {
 	padding: 8px 16px;
 }
 
-.content .container .section .catalog .house .house-sale .house-name {
+.content .container .section .listings .listings-list .listing-item .house-name {
 	font-size: var(--font-size);
 	font-weight: var(--font-weight-semibold);
 	overflow: hidden;
@@ -233,13 +252,13 @@
 	color: var(--text-color);
 }
 
-.content .container .section .catalog .house .house-sale .place {
+.content .container .section .listings .listings-list .listing-item .place {
 	color: var(--caption-color);
 	font-size: 13px;
 	margin-top: 2px;
 }
 
-.content .container .section .catalog .house .house-sale .accent {
+.content .container .section .listings .listings-list .listing-item .accent {
 	background-color: #459a0a;
 	color: var(--section-background-color);
 	font-size: 11px;
@@ -248,9 +267,10 @@
 	padding: 4px 8px;
 	display: inline-block;
 	text-transform: uppercase;
+	transition: 0.3s;
 }
 
-.content .container .section .catalog .house .house-sale .accent-red {
+.content .container .section .listings .listings-list .listing-item .accent-red {
 	background-color: #e4031e;
 	margin-top: 12px;
 	padding: 4px 8px;
@@ -260,9 +280,10 @@
 	border-radius: 2px;
 	display: inline-block;
 	text-transform: uppercase;
+	transition: 0.3s;
 }
 
-.content .container .section .catalog .link-all-listings {
+.content .container .section .listings .link-all-listings {
 	text-decoration: none;
 	color: var(--accent-color);
 	font-size: 13px;
@@ -272,7 +293,7 @@
 	margin-top: 28px;
 }
 
-.content .container .section .catalog .link-all-listings:hover {
+.content .container .section .listings .link-all-listings:hover {
 	color: #0e48c7;
 }
 
@@ -295,19 +316,24 @@
 	gap: var(--gap);
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 24px;
 }
 
-.content .container .section .showing .showing-list .house-sale {
+.content .container .section .showing .showing-list .listing-item {
 	width: calc((100% - (var(--gap) * (var(--columns) - 1))) / 4);
 	background-color: var(--section-background-color);
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
 	text-decoration: none;
 	padding-bottom: 26px;
-	margin-top: 28px;
+	transition: 0.3s;
 }
 
-.content .container .section .showing .showing-list .house-sale .type-image {
+.content .container .section .showing .showing-list .listing-item:hover {
+	background-color: var(--background-color-hover);
+}
+
+.content .container .section .showing .showing-list .listing-item .image {
 	background-image: url("./images/display.jpeg");
 	height: 100px;
 	background-repeat: no-repeat;
@@ -317,7 +343,7 @@
 	padding-top: 8px;
 }
 
-.content .container .section .showing .showing-list .house-sale .type-image .showing-time {
+.content .container .section .showing .showing-list .listing-item .image .showing-time {
 	display: inline-block;
 	background-color: rgba(69, 154, 10, 0.7);
 	border-radius: 2px;
@@ -327,11 +353,11 @@
 	text-transform: uppercase;
 }
 
-.content .container .section .showing .showing-list .house-sale .details {
+.content .container .section .showing .showing-list .listing-item .details {
 	padding: 8px 16px;
 }
 
-.content .container .section .showing .showing-list .house-sale .house-name {
+.content .container .section .showing .showing-list .listing-item .house-name {
 	font-size: var(--font-size);
 	font-weight: var(--font-weight-semibold);
 	overflow: hidden;
@@ -340,13 +366,13 @@
 	color: var(--text-color);
 }
 
-.content .container .section .showing .showing-list .house-sale .place {
+.content .container .section .showing .showing-list .listing-item .place {
 	color: var(--caption-color);
 	font-size: 13px;
 	margin-top: 2px;
 }
 
-.content .container .section .showing .showing-list .house-sale .accent {
+.content .container .section .showing .showing-list .listing-item .accent {
 	width: 66px;
 	background-color: #459a0a;
 	color: var(--section-background-color);
