@@ -1,7 +1,7 @@
 .content {
 	padding-top: 20px;
 	flex-grow: 1;
-	padding-bottom: 60px;
+	padding-bottom: 20px;
 }
 
 .content .container {
@@ -32,16 +32,16 @@
 }
 
 .content .container .section .profile-information .avatar {
-	width: 130px;
-	height: 130px;
-	border-radius: 65px;
+	--avatar-size: 130px;
+	width: var(--avatar-size);
+	height: var(--avatar-size);
+	border-radius: calc(var(--avatar-size) / 2);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 76px;
 	z-index: 1;
 	position: relative;
 }
-
 
 .content .container .section .profile-information .description .name-block {
 	display: flex;
@@ -52,8 +52,7 @@
 
 .content .container .section .profile-information .description .name-block .name {
 	font-size: 18px;
-	font-weight: var(--font-weight-seme-bold);
-	padding-right: 10px;
+	font-weight: var(--font-weight-semibold);
 }
 
 .content .container .section .profile-information .description .name-block .edit {
@@ -62,6 +61,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-left: 10px;
 }
 
 .content .container .section .profile-information .description .name-block .edit .svg-name {
@@ -69,9 +69,8 @@
 	height: 12px;
 }
 
-
 .content .container .section .profile-information .description .country {
-	font-size: 15px;
+	font-size: var(--font-size);
 	color: var(--caption-color);
 }
 
@@ -97,7 +96,7 @@
 .content .container .profile-information .mail-all .mail {
 	font-size: 13px;
 	color: var(--caption-color);
-	padding-left: 10px;
+	margin-left: 10px;
 }
 
 .content .container .section .team {
@@ -110,20 +109,24 @@
 
 .content .container .section .team .team-title {
 	font-size: 18px;
-	font-weight: var(--font-weight-seme-bold);
+	font-weight: var(--font-weight-semibold);
+	text-overflow: ellipsis;
 }
 
 .content .container .section .team .command {
+	--gap: 20px;
+	--columns: 4;
+	gap: var(--gap);
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-top: 28px;
 }
 
 .content .container .section .team .command .staff {
-	width: 176px;
-	height: 200px;
+	width: calc((100% - (var(--gap) * (var(--columns) - 1))) / 4);
 	border: 1px solid var(--border-color);
-	padding: 15px;
+	padding: 16px;
+	text-decoration: none;
 }
 
 .content .container .section .team .command .staff .avatar {
@@ -135,11 +138,15 @@
 
 .content .container .section .team .command .staff .information {
 	margin-top: 16px;
+	color: var(--text-color);
 }
 
 .content .container .section .team .command .staff .information .employee-name {
-	font-size: 15px;
-	font-weight: var(--font-weight-seme-bold);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight-semibold);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .content .container .section .team .command .staff .information .position {
@@ -150,27 +157,29 @@
 
 .content .container .section .team .command .staff .information .license {
 	font-size: 13px;
-	font-weight: var(--font-weight-seme-bold);
+	font-weight: var(--font-weight-semibold);
 	margin-top: 10px;
+	word-break: break-all;
 }
 
 .content .container .section .team .command .staff .information .license .number {
 	color: var(--caption-color);
 	font-size: 13px;
+	margin-left: 4px;
 }
 
 .content .container .section .team .team-members {
 	text-decoration: none;
 	color: var(--accent-color);
 	font-size: 13px;
-	font-weight: var(--font-weight-seme-bold);
+	font-weight: var(--font-weight-semibold);
 	display: inline-block;
 	margin-top: 30px;
 	transition: 0.3s;
 }
 
 .content .container .section .team .team-members:hover {
-	color: #346896;
+	color: #0e48c7;
 }
 
 .content .container .section .catalog {
@@ -182,18 +191,20 @@
 }
 
 .content .container .section .catalog .title-listings {
-	font-weight: var(--font-weight-seme-bold);
+	font-weight: var(--font-weight-semibold);
 	font-size: 18px;
 }
 
 .content .container .section .catalog .house {
+	--gap: 20px;
+	--columns: 4;
+	gap: var(--gap);
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 .content .container .section .catalog .house .house-sale {
-	width: 176px;
+	width: calc((100% - (var(--gap) * (var(--columns) - 1))) / var(--columns));
 	background-color: var(--section-background-color);
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
@@ -214,8 +225,8 @@
 }
 
 .content .container .section .catalog .house .house-sale .house-name {
-	font-size: 15px;
-	font-weight: var(--font-weight-seme-bold);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight-semibold);
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -236,6 +247,7 @@
 	margin-top: 12px;
 	padding: 4px 8px;
 	display: inline-block;
+	text-transform: uppercase;
 }
 
 .content .container .section .catalog .house .house-sale .accent-red {
@@ -247,20 +259,21 @@
 	font-size: 11px;
 	border-radius: 2px;
 	display: inline-block;
+	text-transform: uppercase;
 }
 
-.content .container .section .catalog .house .link-all-listings {
+.content .container .section .catalog .link-all-listings {
 	text-decoration: none;
 	color: var(--accent-color);
 	font-size: 13px;
-	font-weight: var(--font-weight-seme-bold);
+	font-weight: var(--font-weight-semibold);
 	display: inline-block;
 	transition: 0.3s;
 	margin-top: 28px;
 }
 
-.content .container .section .catalog .house .link-all-listings:hover {
-	color: #346896;
+.content .container .section .catalog .link-all-listings:hover {
+	color: #0e48c7;
 }
 
 .content .container .section .showing {
@@ -272,28 +285,26 @@
 }
 
 .content .container .section .showing .title-showing {
-	font-weight: var(--font-weight-seme-bold);
+	font-weight: var(--font-weight-semibold);
 	font-size: 18px;
 }
 
 .content .container .section .showing .showing-list {
+	--gap: 20px;
+	--columns: 4;
+	gap: var(--gap);
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 }
 
 .content .container .section .showing .showing-list .house-sale {
-	width: 176px;
+	width: calc((100% - (var(--gap) * (var(--columns) - 1))) / 4);
 	background-color: var(--section-background-color);
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
 	text-decoration: none;
 	padding-bottom: 26px;
-	margin-top: 30px;
-}
-
-.content .container .section .showing .showing-list .house-sale:first-child {
-	margin-left: 0;
+	margin-top: 28px;
 }
 
 .content .container .section .showing .showing-list .house-sale .type-image {
@@ -321,8 +332,8 @@
 }
 
 .content .container .section .showing .showing-list .house-sale .house-name {
-	font-size: 15px;
-	font-weight: var(--font-weight-seme-bold);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight-semibold);
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -360,11 +371,8 @@
 	background-color: var(--section-background-color);
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
-}
-
-.content .container .sidebar .label-name {
 	font-size: 28px;
-	font-weight: var(--font-weight-seme-bold);
+	font-weight: var(--font-weight-semibold);
 	color: var(--accent-color);
 }
 
@@ -374,8 +382,8 @@
 }
 
 .content .container .sidebar .adress .name-company {
-	font-size: 15px;
-	font-weight: var(--font-weight-seme-bold);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight-semibold);
 }
 
 .content .container .sidebar .adress .post-company {
@@ -394,6 +402,11 @@
 	text-decoration: none;
 	color: var(--accent-color);
 	font-size: 13px;
+	transition: 0.3s;
+}
+
+.content .container .sidebar .adress .site:hover {
+	color: #0e48c7;
 }
 
 .content .container .contact {
@@ -404,7 +417,7 @@
 
 .content .container .sidebar .contact .contact-title {
 	color: #939393;
-	font-weight: var(--font-weight-seme-bold);
+	font-weight: var(--font-weight-semibold);
 	margin-top: 24px;
 	text-transform: uppercase;
 }
@@ -416,10 +429,9 @@
 }
 
 .content .container .sidebar .contact .post-container .svg-contact {
+	flex-shrink: 0;
 	height: 16px;
 	width: 16px;
-	min-height: 16px;
-	min-width: 16px;
 }
 
 .content .container .sidebar .contact .post-container .contact-post {

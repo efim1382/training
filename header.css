@@ -1,7 +1,7 @@
 .header {
 	flex-shrink: 0;
 	height: 48px;
-	background-color: #4a90e2;
+	background-color: var(--accent-hover-color);
 }
 
 .header .container {
@@ -26,7 +26,7 @@
 }
 
 .header .container .search-container .search-dropdown {
-	background-color: #fff;
+	background-color: var(--section-background-color);
 	width: 490px;
 	position: absolute;
 	top: 42px;
@@ -58,7 +58,7 @@
 .header .container .search-container .search-dropdown .search-link {
 	display: flex;
 	align-items: center;
-	width: 100%;
+	width: 100%;	
 	height: 40px;
 	text-decoration: none;
 	padding-left: 20px;
@@ -93,7 +93,7 @@
 
 .header .container .search-container .search-input {
 	font-size: 15px;
-	color: #fff;
+	color: var(--section-background-color);
 	background-color: transparent;
 	border: 0;
 	height: 100%;
@@ -103,7 +103,7 @@
 }
 
 .header .container .search-container .search-input::placeholder {
-	color: #fff;
+	color: var(--section-background-color);
 }
 
 .header .container .navigation {
@@ -116,7 +116,7 @@
 	line-height: 48px;
 	padding-left: 20px;
 	padding-right: 20px;
-	color: #fff;
+	color: var(--section-background-color);
 	font-size: 15px;
 	text-decoration: none;
 	transition: background-color 0.3s;

@@ -36,8 +36,10 @@ html {
 	--border-color: #dedede;
 	--background-color: #f4f4f4;
 	--section-background-color: #fff;
+
 	--font-weight-regular: 300;
-	--font-weight-seme-bold: 500;
+	--font-weight-semibold: 500;
+	--font-size: 15px;
 }
 
 
