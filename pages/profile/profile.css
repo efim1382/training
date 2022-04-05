@@ -232,7 +232,7 @@
 }
 
 .content .container .section .listings .listings-list .listing-item .image {
-	background-image: url("./images/display.jpeg");
+	background-image: url("../../images/display.jpeg");
 	height: 100px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -334,7 +334,7 @@
 }
 
 .content .container .section .showing .showing-list .listing-item .image {
-	background-image: url("./images/display.jpeg");
+	background-image: url("../../images/display.jpeg");
 	height: 100px;
 	background-repeat: no-repeat;
 	background-position: center;
