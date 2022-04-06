@@ -68,7 +68,7 @@ body {
 }
 
 .avatar {
-	background-image: url("./images/profile.jpeg");
+	background-image: url("../images/profile.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
