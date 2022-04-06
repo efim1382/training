@@ -9,6 +9,16 @@
 	line-height: 48px;
 }
 
+.content .bread-crumbs .container .bread-crumbs-page {
+	text-decoration: none;
+	color: var(--caption-color);
+	transition: 0.3s;
+}
+
+.content .bread-crumbs .container .bread-crumbs-page:hover:not(:last-child) {
+	color: var(--accent-hover-color);
+}
+
 .content .bread-crumbs .container .crumbs-svg {
 	width: 12px;
 	height: 12px;
@@ -18,7 +28,6 @@
 }
 
 .content .bread-crumbs .container {
-	color: var(--caption-color);
 	font-size: 13px;
 	display: flex;
 	align-items: center;
@@ -41,11 +50,10 @@
 	color: var(--text-color);
 	font-weight: var(--font-weight-semibold);
 	line-height: 48px;
-	margin-left: 20px;
 }
 
-.content .tabs .container .tab:first-child {
-	margin-left: 0;
+.content .tabs .container .tab:not(:first-child) {
+	margin-left: 20px;
 }
 
 .content .tabs .container .tab:hover {
@@ -63,47 +71,52 @@
 	border: 1px solid var(--border-color);
 	margin-top: 12px;
 	font-size: var(--font-size);
-
 }
 
-.content .container .filter .filter-button {
+.content .section .container .filter .filter-button {
 	margin-left: auto;
 	height: 100%;
 	padding-right: 20px;
 	padding-left: 20px;
 }
 
-.content .container .filter .filter-svg {
+.content .section .container .filter .filter-button .filter-svg {
 	height: 16px;
 	width: 16px;
-	flex-shrink: 0;
 	fill: var(--caption-color);
 	transition: 0.3s;
 }
 
-.content .container .filter .filter-button:hover .filter-svg {
+.content .section .container .filter .filter-button:hover .filter-svg {
 	fill: var(--accent-hover-color);
 }
 
-.content .container .filter .filter-all {
-	margin-left: 4px;
+.content .section .container .filter .filter-button-all {
 	font-weight: var(--font-weight-semibold);
+	font-size: 16px;
+	height: 100%;
+	transition: 0.3s;
+	padding: 10px;
 }
 
-.content .container .listings {
+.content .section .container .filter .filter-button-all:hover {
+	color: var(--accent-hover-color);	
+}
+
+.content .section .container .listings {
 	margin-top: 12px;
 	background-color: var(--section-background-color);
 	border-radius: 2px;
 	border: 1px solid var(--border-color);
-	padding: 24px 20px;
+	padding: 20px;
 }
 
-.content .container .listings .listing-title {
+.content .section .container .listings .listing-title {
 	font-weight: var(--font-weight-semibold);
 	font-size: 18px;
 }
 
-.content .container .listings .listing-list {
+.content .section .container .listings .listing-list {
 	--gap: 25px;
 	--columns: 5;
 	gap: var(--gap);
@@ -112,19 +125,22 @@
 	margin-top: 28px;
 }
 
-.content .container .listings .listing-list .listing-item {
+.content .section .container .listings .listing-list .listing-item {
 	width: calc((100% - (var(--gap) * (var(--columns) - 1))) / (var(--columns)));
 	border: 1px solid var(--border-color);
 	border-radius: 2px;
 	background-color: var(--section-background-color);
-	display: block;
 	text-decoration: none;
 	color: var(--text-color);
 	padding-bottom: 10px;
-
+	transition: 0.3s;
 }
 
-.content .container .listings .listing-list .listing-item .image {
+.content .section .container .listings .listing-list .listing-item:hover {
+	background-color: var(--background-color-hover);
+}
+
+.content .section .container .listings .listing-list .listing-item .image {
 	background-image: url("../../images/prapor.jpeg");
 	height: 100px;	
 	background-repeat: no-repeat;
@@ -132,22 +148,22 @@
 	background-size: cover;
 }
 
-.content .container .listings .listing-list .listing-item .item-info {
+.content .section .container .listings .listing-list .listing-item .item-info {
 	padding: 12px 15px;
 }
 
-.content .container .listings .listing-list .listing-item .item-info .item-title {
+.content .section .container .listings .listing-list .listing-item .item-info .item-title {
 	font-weight: var(--font-weight-semibold);
 	font-size: var(--font-size);
 }
 
-.content .container .listings .listing-list .listing-item .item-info .item-adress {
+.content .section .container .listings .listing-list .listing-item .item-info .item-adress {
 	font-size: 13px;
 	color: var(--caption-color);
 	margin-top: 4px;
 }
 
-.content .container .listings .listing-list .listing-item .action-greeen {
+.content .section .container .listings .listing-list .listing-item .action-greeen {
 	background-color: #459a0a;
 	padding: 4px 8px;
 	text-transform: uppercase;
