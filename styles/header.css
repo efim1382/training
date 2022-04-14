@@ -135,6 +135,7 @@
 .header .container .actions .action {
 	--icon-size: 16px;
 	--action-size: 48px;
+	--avatar-size: 28px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -180,7 +181,7 @@
 		display: none;
 	}
 	.header .container .actions .avatar-button {
-		margin-right: calc(((var(--action-size) - var(--icon-size)) / 4) * -1);
+		margin-right: calc(((var(--action-size) - var(--avatar-size)) / 2) * -1);
 	}
 }
 
