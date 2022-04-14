@@ -1,0 +1,175 @@
+.content {
+	flex-grow: 1;
+	padding-bottom: 20px;
+}
+
+.content .bread-crumbs {
+	height: 48px;
+	background-color: var(--section-background-color);
+	line-height: 48px;
+}
+
+.content .bread-crumbs .container .bread-crumbs-page {
+	text-decoration: none;
+	color: var(--caption-color);
+	transition: 0.3s;
+}
+
+.content .bread-crumbs .container .bread-crumbs-page:hover:not(:last-child) {
+	color: var(--accent-hover-color);
+}
+
+.content .bread-crumbs .container .crumbs-svg {
+	width: 12px;
+	height: 12px;
+	transform: rotate(-90deg);
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.content .bread-crumbs .container {
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+}
+
+.content .tabs {
+	background-color: var(--section-background-color);
+	border-bottom: 1px solid var(--border-color);
+}
+
+.content .tabs .container {
+	display: flex;
+}
+.content .tabs .container .tab {
+	font-size: var(--font-size);
+	height: 48px;
+	transition: 0.3s;
+	border-bottom: 2px solid var(--section-background-color);
+	text-decoration: none;
+	color: var(--text-color);
+	font-weight: var(--font-weight-semibold);
+	line-height: 48px;
+}
+
+.content .tabs .container .tab:not(:first-child) {
+	margin-left: 20px;
+}
+
+.content .tabs .container .tab:hover {
+	border-bottom: 2px solid var(--accent-color);
+	color: var(--accent-color);
+}
+
+.content .container .filter {
+	height: 48px;
+	background-color: var(--section-background-color);
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	border-radius: 2px;
+	border: 1px solid var(--border-color);
+	margin-top: 12px;
+	font-size: var(--font-size);
+}
+
+.content .section .container .filter .filter-button {
+	margin-left: auto;
+	height: 100%;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.content .section .container .filter .filter-button .filter-svg {
+	height: 16px;
+	width: 16px;
+	fill: var(--caption-color);
+	transition: 0.3s;
+}
+
+.content .section .container .filter .filter-button:hover .filter-svg {
+	fill: var(--accent-hover-color);
+}
+
+.content .section .container .filter .filter-button-all {
+	font-weight: var(--font-weight-semibold);
+	font-size: 16px;
+	height: 100%;
+	transition: 0.3s;
+	padding: 10px;
+}
+
+.content .section .container .filter .filter-button-all:hover {
+	color: var(--accent-hover-color);	
+}
+
+.content .section .container .listings {
+	margin-top: 12px;
+	background-color: var(--section-background-color);
+	border-radius: 2px;
+	border: 1px solid var(--border-color);
+	padding: 20px;
+}
+
+.content .section .container .listings .listing-title {
+	font-weight: var(--font-weight-semibold);
+	font-size: 18px;
+}
+
+.content .section .container .listings .listing-list {
+	--gap: 25px;
+	--columns: 5;
+	gap: var(--gap);
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 28px;
+}
+
+.content .section .container .listings .listing-list .listing-item {
+	width: calc((100% - (var(--gap) * (var(--columns) - 1))) / (var(--columns)));
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	background-color: var(--section-background-color);
+	text-decoration: none;
+	color: var(--text-color);
+	padding-bottom: 10px;
+	transition: 0.3s;
+}
+
+.content .section .container .listings .listing-list .listing-item:hover {
+	background-color: var(--background-color-hover);
+}
+
+.content .section .container .listings .listing-list .listing-item .image {
+	background-image: url("../../images/prapor.jpeg");
+	height: 100px;	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.content .section .container .listings .listing-list .listing-item .item-info {
+	padding: 12px 15px;
+}
+
+.content .section .container .listings .listing-list .listing-item .item-info .item-title {
+	font-weight: var(--font-weight-semibold);
+	font-size: var(--font-size);
+}
+
+.content .section .container .listings .listing-list .listing-item .item-info .item-adress {
+	font-size: 13px;
+	color: var(--caption-color);
+	margin-top: 4px;
+}
+
+.content .section .container .listings .listing-list .listing-item .action-greeen {
+	background-color: #459a0a;
+	padding: 4px 8px;
+	text-transform: uppercase;
+	color: var(--section-background-color);
+	border-radius: 2px;
+	font-size: 11px;
+	display: inline-block;
+	margin-left: 12px;
+}

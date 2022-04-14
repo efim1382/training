@@ -68,8 +68,14 @@ body {
 }
 
 .avatar {
-	background-image: url("./images/profile.jpeg");
+	background-image: url("../images/profile.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+@media screen and (max-width: 1170px) {
+	.container {
+		width: 100%;
+	}
 }

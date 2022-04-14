@@ -1,3 +1,4 @@
+
 .header {
 	flex-shrink: 0;
 	height: 48px;
@@ -134,6 +135,7 @@
 .header .container .actions .action {
 	--icon-size: 16px;
 	--action-size: 48px;
+	--avatar-size: 28px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -162,3 +164,24 @@
 .header .container .actions .action:last-child {
 	margin-right: calc(((var(--action-size) - var(--icon-size)) / 2) * -1);
 }
+
+@media screen and (max-width: 1170px) {
+	.header .container .search-container {
+		display: none;
+	}
+	.header .container .navigation {
+		display: none;
+	}
+
+	.header .container .actions {
+		margin-left: auto;
+	}
+
+	.header .container .actions .action:not(.avatar-button) {
+		display: none;
+	}
+	.header .container .actions .avatar-button {
+		margin-right: calc(((var(--action-size) - var(--avatar-size)) / 2) * -1);
+	}
+}
+
