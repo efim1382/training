@@ -166,6 +166,16 @@
 }
 
 @media screen and (max-width: 1170px) {
+
+	.header {
+		height: 130px;
+	}
+
+	.header .container .logo {
+		max-width: 50px;
+		max-height: 50px;
+	}
+
 	.header .container .search-container {
 		display: none;
 	}
@@ -180,8 +190,15 @@
 	.header .container .actions .action:not(.avatar-button) {
 		display: none;
 	}
-	.header .container .actions .avatar-button {
-		margin-right: calc(((var(--action-size) - var(--avatar-size)) / 2) * -1);
+
+	.header .container .actions .action {
+		width: 80px;
+	}
+
+	.header .container .actions .action .avatar {
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
 	}
 }
 
