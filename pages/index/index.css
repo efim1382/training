@@ -85,7 +85,8 @@
 	display: flex;
 	align-items: center;
 	border-top: 1px solid var(--border-color);
-	padding: 12px 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .content .container .dashboard .input-container .actions .write-article {
@@ -464,7 +465,8 @@
 	}
 
 	.content .container .dashboard .input-container {
-		padding: 0 40px;
+		padding-left: 40px;
+		padding-bottom: 40px;
 	}
 
 	.content .container .dashboard .input-container .post-input {
@@ -473,7 +475,8 @@
 	}
 
 	.content .container .dashboard .input-container .actions {
-		padding: 24px 0;
+		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 
 	.content .container .dashboard .input-container .actions .write-article {
@@ -498,7 +501,8 @@
 	.content .container .dashboard .input-container .actions .submit {
 		font-size: 32px;
 		margin-left: 60px;
-		padding: 0 36px;
+		padding-left: 36px;
+		padding-right: 36px;
 		height: 60px;
 	}
 
@@ -538,11 +542,13 @@
 		font-size: 32px;
 		height: 100px;
 		line-height: 100px;
-		padding: 0 40px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 
 	.content .container .dashboard .article .article-content {
-		padding: 40px 0;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 
 	.content .container .dashboard .article .article-content .paragraph {
@@ -550,12 +556,14 @@
 		line-height: 20px;
 	}
 
-	.content .container .dashboard .article .article-content .advertising + .paragraph, .content .container .dashboard .article .article-content .paragraph + .advertising {
+	.content .container .dashboard .article .article-content .advertising + .paragraph,
+	 .content .container .dashboard .article .article-content .paragraph + .advertising {
 		margin-top: 40px;
 	}
 
 	.content .container .dashboard .article .article-content .advertising .sale-department {
-		padding: 24px 0;
+		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 
 	.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-name {
@@ -571,9 +579,11 @@
 	}
 
 	.content .container .dashboard .article .article-content .advertising .sale-department .appeal {
-		color: var(--section-background-color);
+		color: var(--accent-color);
+		border: 1px solid var(--accent-color);
+		border-radius: 4px;
 		font-size: 32px;
-		background-color: var(--accent-color);
+		background-color: var(--section-background-color);
 		height: 70px;
 	}
 }
