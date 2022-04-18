@@ -34,7 +34,6 @@
 }
 
 .content .container .profile .address {
-	font-size: 15px;
 	color: var(--caption-color);
 }
 
@@ -75,7 +74,6 @@
 .content .container .dashboard .input-container .post-input {
 	width: 100%;
 	height: 70px;
-	font-size: 15px;
 }
 
 .content .container .dashboard .input-container .post-input::placeholder {
@@ -86,8 +84,9 @@
 .content .container .dashboard .input-container .actions {
 	display: flex;
 	align-items: center;
-	height: 50px;
 	border-top: 1px solid var(--border-color);
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .content .container .dashboard .input-container .actions .write-article {
@@ -183,10 +182,11 @@
 }
 
 .content .container .dashboard .article .author .avatar {
+	--avatar-size: 44px;
 	flex-shrink: 0;
-	width: 44px;
-	height: 44px;
-	border-radius: 22px;
+	width: var(--avatar-size);
+	height: var(--avatar-size);
+	border-radius: calc(var(--avatar-size) / 2);
 }
 
 .content .container .dashboard .article .author .author-info {
@@ -197,7 +197,6 @@
 .content .container .dashboard .article .author .author-info .name {
 	height: 16px;
 	line-height: 16px;
-	font-size: 15px;
 	font-weight: 500;
 }
 
@@ -244,10 +243,6 @@
 	padding-bottom: 12px;
 }
 
-.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-name {
-	font-size: 15px;
-}
-
 .content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-adress {
 	margin-top: 2px;
 	color: var(--caption-color);
@@ -256,7 +251,6 @@
 
 .content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-cost {
 	margin-top: 2px;
-	font-size: 15px;
 	font-weight: 500;
 }
 
@@ -290,8 +284,7 @@
 .content .container .dashboard .article .actions .action-button {
 	height: 40px;
 	line-height: 40px;
-	padding-left: 12px;
-	padding-right: 12px;
+	padding: 0 12px;
 	font-size: 13px;
 	color: var(--caption-color);
 	transition: 0.3s;
@@ -324,7 +317,6 @@
 	padding-right: 20px;
 	background-color: var(--accent-color);
 	border-radius: 2px;
-	font-size: 15px;
 	color: #fff;
 }
 
@@ -403,10 +395,6 @@
 	background-color: #fff;
 }
 
-.content .container .sidebar .recent .title {
-	font-size: 15px;
-}
-
 .content .container .sidebar .recent .listing {
 	display: flex;
 	padding-top: 10px;
@@ -435,7 +423,6 @@
 .content .container .sidebar .recent .listing .house-details .address { 
 	height: 22px;
 	line-height: 22px;
-	font-size: 15px;
 	font-weight: 500;
 }
 
@@ -457,4 +444,146 @@
 
 .content .container .sidebar .recent .view-all:hover {
 	color: #22598a;
+}
+
+@media screen and (max-width: 1170px) {
+
+	.content {
+		margin-top: 20px;
+	}
+
+	.content .container .profile {
+		display: none;
+	}
+
+	.content .container .sidebar {
+		display: none;
+	}
+
+	.content .container .dashboard {
+		margin-left: 0;
+	}
+
+	.content .container .dashboard .input-container {
+		padding-left: 40px;
+		padding-bottom: 40px;
+	}
+
+	.content .container .dashboard .input-container .post-input {
+		font-size: 36px;
+		height: 100px;
+	}
+
+	.content .container .dashboard .input-container .actions {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+	.content .container .dashboard .input-container .actions .write-article {
+		height: 80px;
+		border-radius: 40px;
+	}
+
+	.content .container .dashboard .input-container .actions .write-article .button-text {
+		font-size: 32px;
+	}
+
+	.content .container .dashboard .input-container .actions .write-article svg {
+		width: 32px;
+		height: 32px;
+	}
+
+	.content .container .dashboard .input-container .actions .file svg {
+		width: 50px;
+		height: 50px;
+	}
+
+	.content .container .dashboard .input-container .actions .submit {
+		font-size: 32px;
+		margin-left: 60px;
+		padding-left: 36px;
+		padding-right: 36px;
+		height: 60px;
+	}
+
+	.content .container .dashboard .article {
+		margin-top: 36px;
+		padding-top: 24px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.content .container .dashboard .article .author .avatar {
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
+	}
+
+	.content .container .dashboard .article .author .author-info {
+		margin-left: 20px;
+		margin-top: 16px;
+	}
+
+	.content .container .dashboard .article .author .author-info .name {
+		font-size: 36px;
+	}
+
+	.content .container .dashboard .article .author .author-info .work-position {
+		margin-top: 28px;
+		font-size: 28px;
+	}
+
+	.content .container .dashboard .article .author .author-info .time {
+		font-size: 28px;
+		margin-top: 18px;
+	}
+
+	.content .container .dashboard .article .actions .action-button {
+		font-size: 32px;
+		height: 100px;
+		line-height: 100px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.content .container .dashboard .article .article-content {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.content .container .dashboard .article .article-content .paragraph {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.content .container .dashboard .article .article-content .advertising + .paragraph,
+	 .content .container .dashboard .article .article-content .paragraph + .advertising {
+		margin-top: 40px;
+	}
+
+	.content .container .dashboard .article .article-content .advertising .sale-department {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+	.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-name {
+		font-size: 32px;
+	}
+
+	.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-adress {
+		font-size: 32px;
+	}
+
+	.content .container .dashboard .article .article-content .advertising .sale-department .sale-infirmation .sale-cost {
+		font-size: 32px;
+	}
+
+	.content .container .dashboard .article .article-content .advertising .sale-department .appeal {
+		color: var(--accent-color);
+		border: 1px solid var(--accent-color);
+		border-radius: 4px;
+		font-size: 32px;
+		background-color: var(--section-background-color);
+		height: 70px;
+	}
 }
